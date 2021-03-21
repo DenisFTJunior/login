@@ -1,0 +1,42 @@
+@use "scss-vars/color" as color;
+@use "Button.module.scss" as button;
+
+.container{
+    width:100vw;
+    height: 10vh;
+    min-height: 2.5rem;
+    display :grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 10vh;
+    grid-template-areas: "logo void login";
+    align-items: center;
+    justify-items:center;
+    background-color: rgba($color: color.$primary-color, $alpha: 0.70);
+    box-shadow: 0 0.1875rem 1.25rem 0 ;
+}
+.logo{
+    grid-area: logo;
+}
+.containerButton{
+    grid-area:login;
+}
+
+.buttonSignin{
+    @include button.signin;
+}
+.buttonSignup{
+    @include button.signup;
+}
+
+.out{
+    width: 100vw;
+    height:100vw;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgba($color: color.$terciary-color, $alpha: 0.1);
+}
+.none{
+    display:none;
+}
+

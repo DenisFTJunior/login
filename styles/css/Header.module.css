@@ -1,0 +1,70 @@
+.container {
+  width: 100vw;
+  height: 10vh;
+  min-height: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 10vh;
+  grid-template-areas: "logo void login";
+  align-items: center;
+  justify-items: center;
+  background-color: rgba(91, 117, 83, 0.7);
+  box-shadow: 0 0.1875rem 1.25rem 0;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.containerButton {
+  grid-area: login;
+}
+
+.buttonSignin {
+  color: #270722;
+  width: 5rem;
+  border: 0.0625rem solid #F1F0CC;
+  background-color: #F1F0CC;
+  border-radius: 5%;
+  font-size: 0.725rem;
+  height: 2.5rem;
+  margin: 0.375rem;
+  box-shadow: 0 0 0.4rem 0 #270722;
+  position: relative;
+}
+.buttonSignin:hover {
+  transform: translate(0, 5px);
+  box-shadow: 0 0 1.25rem 0;
+}
+
+.buttonSignup {
+  color: #270722;
+  background-color: white;
+  font-size: 0.825rem;
+  border: 0.0625rem solid #F1F0CC;
+  border-radius: 5%;
+  width: 5rem;
+  height: 2.5rem;
+  margin: 0.375rem;
+  box-shadow: 0 0 0.4rem 0 #270722;
+  position: relative;
+}
+.buttonSignup:hover {
+  transform: translate(0, 5px);
+  box-shadow: 0 0 1.25rem 0;
+}
+
+.out {
+  width: 100vw;
+  height: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(39, 7, 34, 0.1);
+}
+
+.none {
+  display: none;
+}
+
+/*# sourceMappingURL=Header.module.css.map */

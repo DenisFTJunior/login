@@ -1,0 +1,49 @@
+.container {
+  width: 22.5rem;
+  height: 15rem;
+  padding-top: 2rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-bottom: 2rem;
+  border: 0.15625rem solid #F1F0CC;
+  position: absolute;
+  top: 10rem;
+  right: 10rem;
+  background-color: rgba(91, 117, 83, 0.7);
+  box-shadow: 0 0 4rem -1rem;
+  z-index: 1;
+}
+
+.input {
+  width: 20rem;
+  height: 2.5rem;
+  box-shadow: 0 0 2.5rem -1rem;
+  margin-bottom: 0.625rem;
+  padding-left: 1.25rem;
+}
+.input:focus {
+  transform: translate(0, -5px);
+  box-shadow: 0 0 5rem -0.5rem;
+}
+
+.submitButton {
+  width: 19.5rem;
+  height: 2.5rem;
+  background: white;
+  color: #270722;
+  border: 0.0625rem solid #F1F0CC;
+  border-radius: 5%;
+  padding: 0.3125rem;
+  margin: 0.3125rem;
+  box-shadow: 0 0 0.4rem 0 #270722;
+}
+.submitButton:hover {
+  transform: translate(0, -3px);
+  box-shadow: 0 0 1.25rem 0;
+}
+
+.none {
+  display: none;
+}
+
+/*# sourceMappingURL=Login.module.css.map */

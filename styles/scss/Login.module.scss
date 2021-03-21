@@ -1,0 +1,40 @@
+@use "Button.module.scss" as button;
+@use "scss-vars/size-computer.scss" as size;
+@use "scss-vars/color" as color;
+
+.container{
+    width:22.5rem;
+    height: 15rem;
+    padding-top:2rem;
+    padding-left:size.$m;
+    padding-right:size.$m;
+    padding-bottom:2rem;
+    border: size.$s/4 solid color.$secondary-color;
+    position:absolute;
+    top: 10rem;
+    right:10rem;
+    background-color: rgba($color: color.$primary-color, $alpha: 0.70);
+    box-shadow: 0 0 4rem -1rem;
+    z-index:1;
+}
+
+.input{
+    width: size.$xl *4;
+    height: size.$l;
+    box-shadow: 0 0 2.5rem -1rem;
+    margin-bottom:size.$s;
+    padding-left: size.$m;
+    &:focus{
+        transform: translate(0,-5px);
+        box-shadow: 0 0 5rem -0.5rem ;
+    }
+}
+
+.submitButton{
+    @include button.login;
+}
+.none{
+    display:none;
+}
+
+
